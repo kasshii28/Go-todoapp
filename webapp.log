@@ -1,2 +1,4 @@
 2024/04/20 18:49:56 main.go:15: test
 2024/04/21 22:58:09 todos.go:49: near "todos": syntax error
+2024/04/22 12:19:57 todos.go:74: no such column: created
+2024/04/22 12:26:44 todos.go:100: near "where": syntax error
