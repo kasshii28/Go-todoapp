@@ -332,3 +332,599 @@ net/http.(*conn).serve(0x1800d80, {0x6b9a90, 0x1860408})
 	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
 created by net/http.(*Server).Serve in goroutine 1
 	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:02 server.go:3413: http: panic serving 127.0.0.1:58114: template: layout.html:20: unexpected {{end}}
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x20262f8})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x2100d28}, {0xa52ee0, 0xb36eb0}, {0x2059cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x2100d28}, 0x2100968)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x2100d28}, 0x2100968)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x2100d28}, 0x2100968)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x2100d28}, 0x2100968)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2000c00, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:02 server.go:3413: http: panic serving 127.0.0.1:58115: template: layout.html:20: unexpected {{end}}
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2026378})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x2100dc8}, {0xa52ee0, 0xb36eb0}, {0x2053cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x2100dc8}, 0x2100a08)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x2100dc8}, 0x2100a08)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x2100dc8}, 0x2100a08)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x2100dc8}, 0x2100a08)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2188000, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:02 server.go:3413: http: panic serving 127.0.0.1:58116: template: layout.html:20: unexpected {{end}}
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2090078})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x20a60a8}, {0xa52ee0, 0xb36eb0}, {0x209dcf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x20a60a8}, 0x20a6008)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x20a60a8}, 0x20a6008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x20a60a8}, 0x20a6008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x20a60a8}, 0x20a6008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2092000, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:03 server.go:3413: http: panic serving 127.0.0.1:58118: template: layout.html:20: unexpected {{end}}
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2090100})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x20a6288}, {0xa52ee0, 0xb36eb0}, {0x2099cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x20a6288}, 0x21a2008)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x20a6288}, 0x21a2008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x20a6288}, 0x21a2008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x20a6288}, 0x21a2008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x20920c0, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:03 server.go:3413: http: panic serving 127.0.0.1:58119: template: layout.html:20: unexpected {{end}}
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2090178})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x20a6328}, {0xa52ee0, 0xb36eb0}, {0x209dcf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x20a6328}, 0x20a61e8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x20a6328}, 0x20a61e8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x20a6328}, 0x20a61e8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x20a6328}, 0x20a61e8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2188060, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:03 server.go:3413: http: panic serving 127.0.0.1:58120: template: layout.html:20: unexpected {{end}}
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x20263f8})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x2100f08}, {0xa52ee0, 0xb36eb0}, {0x2053cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x2100f08}, 0x2100e68)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x2100f08}, 0x2100e68)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x2100f08}, 0x2100e68)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x2100f08}, 0x2100e68)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x20921e0, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:05 server.go:3413: http: panic serving 127.0.0.1:58121: template: layout.html:20: unexpected {{end}}
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2026480})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x2101048}, {0xa52ee0, 0xb36eb0}, {0x209bcf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x2101048}, 0x21a20a8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x2101048}, 0x21a20a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x2101048}, 0x21a20a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x2101048}, 0x21a20a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2000d80, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:05 server.go:3413: http: panic serving 127.0.0.1:58122: template: layout.html:20: unexpected {{end}}
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x20264f8})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x21010e8}, {0xa52ee0, 0xb36eb0}, {0x2053cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x21010e8}, 0x2100fa8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x21010e8}, 0x2100fa8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x21010e8}, 0x2100fa8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x21010e8}, 0x2100fa8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x21880c0, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:19:05 server.go:3413: http: panic serving 127.0.0.1:58123: template: layout.html:20: unexpected {{end}}
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2186098})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x21a21e8}, {0xa52ee0, 0xb36eb0}, {0x21a9cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x21a21e8}, 0x21a2148)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x21a21e8}, 0x21a2148)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x21a21e8}, 0x21a2148)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x21a21e8}, 0x21a2148)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2000ea0, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:21:04 server.go:3413: http: panic serving 127.0.0.1:58227: template: layout.html:20: unexpected {{end}}
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2090208})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x20a6508}, {0xa52ee0, 0xb36eb0}, {0x209dcf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x20a6508}, 0x20a63c8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x20a6508}, 0x20a63c8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x20a6508}, 0x20a63c8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x20a6508}, 0x20a63c8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2188180, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:21:04 server.go:3413: http: panic serving 127.0.0.1:58228: template: layout.html:20: unexpected {{end}}
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2090280})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x20a65a8}, {0xa52ee0, 0xb36eb0}, {0x2099cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x20a65a8}, 0x20a6468)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x20a65a8}, 0x20a6468)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x20a65a8}, 0x20a6468)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x20a65a8}, 0x20a6468)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x21881e0, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:21:04 server.go:3413: http: panic serving 127.0.0.1:58229: template: layout.html:20: unexpected {{end}}
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2090300})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x20a6648}, {0xa52ee0, 0xb36eb0}, {0x21a9cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x20a6648}, 0x21a2328)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x20a6648}, 0x21a2328)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x20a6648}, 0x21a2328)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x20a6648}, 0x21a2328)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x2092300, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:21:51 server.go:3413: http: panic serving 127.0.0.1:58280: template: layout.html:20: unexpected {{end}}
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0xa5f1c0, 0x2026580})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0xb397fc, 0x2101228}, {0xa52ee0, 0xb36eb0}, {0x2053cf8, 0x2, 0x2})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0xb397fc, 0x2101228}, 0x2101188)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x9b
+net/http.HandlerFunc.ServeHTTP(0xacc6d8, {0xb397fc, 0x2101228}, 0x2101188)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0xd51ea0, {0xb397fc, 0x2101228}, 0x2101188)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x21008c8}, {0xb397fc, 0x2101228}, 0x2101188)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x20923c0, {0xb39ab0, 0x2060408})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:55 server.go:3413: http: panic serving 127.0.0.1:58602: template: layout.html:20: unexpected {{end}}
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x25020c0})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x252e288}, {0x11c2ee0, 0x12a6eb0}, {0x2459cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x252e288}, 0x2464008)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x252e288}, 0x2464008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x252e288}, 0x2464008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x252e288}, 0x2464008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0b40, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:55 server.go:3413: http: panic serving 127.0.0.1:58603: template: layout.html:20: unexpected {{end}}
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2502148})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x252e3c8}, {0x11c2ee0, 0x12a6eb0}, {0x2453cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x252e3c8}, 0x252e008)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x252e3c8}, 0x252e008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x252e3c8}, 0x252e008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x252e3c8}, 0x252e008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0ba0, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:55 server.go:3413: http: panic serving 127.0.0.1:58604: template: layout.html:20: unexpected {{end}}
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x248e298})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x24b0a08}, {0x11c2ee0, 0x12a6eb0}, {0x24e9cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x24b0a08}, 0x24b0968)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x24b0a08}, 0x24b0968)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x24b0a08}, 0x24b0968)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x24b0a08}, 0x24b0968)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x250c120, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58605: template: layout.html:20: unexpected {{end}}
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x25021d8})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x252e508}, {0x11c2ee0, 0x12a6eb0}, {0x2453cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x252e508}, 0x252e468)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x252e508}, 0x252e468)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x252e508}, 0x252e468)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x252e508}, 0x252e468)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0c60, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58606: template: layout.html:20: unexpected {{end}}
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2686080})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c148}, {0x11c2ee0, 0x12a6eb0}, {0x24e5cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c148}, 0x268c008)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c148}, 0x268c008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c148}, 0x268c008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c148}, 0x268c008)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0cc0, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58607: template: layout.html:20: unexpected {{end}}
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2686100})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c288}, {0x11c2ee0, 0x12a6eb0}, {0x24e7cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c288}, 0x268c0a8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c288}, 0x268c0a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c288}, 0x268c0a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c288}, 0x268c0a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x250c1e0, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58608: template: layout.html:20: unexpected {{end}}
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x248e330})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x24b0b48}, {0x11c2ee0, 0x12a6eb0}, {0x24e9cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x24b0b48}, 0x24b0aa8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x24b0b48}, 0x24b0aa8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x24b0b48}, 0x24b0aa8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x24b0b48}, 0x24b0aa8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x26ac0c0, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58609: template: layout.html:20: unexpected {{end}}
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2686198})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c468}, {0x11c2ee0, 0x12a6eb0}, {0x24e7cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c468}, 0x268c328)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c468}, 0x268c328)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c468}, 0x268c328)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c468}, 0x268c328)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0d80, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58610: template: layout.html:20: unexpected {{end}}
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2686218})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c508}, {0x11c2ee0, 0x12a6eb0}, {0x24e5cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c508}, 0x268c3c8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c508}, 0x268c3c8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c508}, 0x268c3c8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c508}, 0x268c3c8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0de0, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:56 server.go:3413: http: panic serving 127.0.0.1:58611: template: layout.html:20: unexpected {{end}}
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x248e3d0})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x24b0c88}, {0x11c2ee0, 0x12a6eb0}, {0x24e9cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x24b0c88}, 0x24b0be8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x24b0c88}, 0x24b0be8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x24b0c88}, 0x24b0be8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x24b0c88}, 0x24b0be8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0e40, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:27:57 server.go:3413: http: panic serving 127.0.0.1:58613: template: layout.html:20: unexpected {{end}}
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x26862a0})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c648}, {0x11c2ee0, 0x12a6eb0}, {0x24e5cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c648}, 0x268c5a8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c648}, 0x268c5a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c648}, 0x268c5a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c648}, 0x268c5a8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0f00, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:28:02 server.go:3413: http: panic serving 127.0.0.1:58614: template: layout.html:20: unexpected {{end}}
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2686320})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c788}, {0x11c2ee0, 0x12a6eb0}, {0x2453cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c788}, 0x252e648)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c788}, 0x252e648)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c788}, 0x252e648)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c788}, 0x252e648)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0f60, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:28:02 server.go:3413: http: panic serving 127.0.0.1:58624: template: layout.html:20: unexpected {{end}}
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x26863a0})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c8c8}, {0x11c2ee0, 0x12a6eb0}, {0x2459cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c8c8}, 0x252e6e8)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c8c8}, 0x252e6e8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c8c8}, 0x252e6e8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c8c8}, 0x252e6e8)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x24c0fc0, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 18:28:02 server.go:3413: http: panic serving 127.0.0.1:58625: template: layout.html:20: unexpected {{end}}
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files (x86)/Go/src/net/http/server.go:1898 +0xd4
+panic({0x11cf1c0, 0x2686428})
+	C:/Program Files (x86)/Go/src/runtime/panic.go:770 +0xf6
+html/template.Must(...)
+	C:/Program Files (x86)/Go/src/html/template/template.go:368
+Go-todoapp/app/models/controllers.generateHTML({0x12a97fc, 0x268c968}, {0x11c2ee0, 0x12a6eb0}, {0x24e9cf0, 0x3, 0x3})
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/server.go:16 +0x1e4
+Go-todoapp/app/models/controllers.top({0x12a97fc, 0x268c968}, 0x24b0d28)
+	C:/Users/Kasshii/Desktop/Go app/Go-todoapp/app/models/controllers/route_main.go:8 +0x98
+net/http.HandlerFunc.ServeHTTP(0x123c6d8, {0x12a97fc, 0x268c968}, 0x24b0d28)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2166 +0x32
+net/http.(*ServeMux).ServeHTTP(0x14c1ea0, {0x12a97fc, 0x268c968}, 0x24b0d28)
+	C:/Program Files (x86)/Go/src/net/http/server.go:2683 +0x1f7
+net/http.serverHandler.ServeHTTP({0x24b08c8}, {0x12a97fc, 0x268c968}, 0x24b0d28)
+	C:/Program Files (x86)/Go/src/net/http/server.go:3137 +0x97
+net/http.(*conn).serve(0x26ac300, {0x12a9ab0, 0x24bc1e0})
+	C:/Program Files (x86)/Go/src/net/http/server.go:2039 +0x629
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files (x86)/Go/src/net/http/server.go:3285 +0x460
+2024/04/28 19:11:30 server.go:3413: http: superfluous response.WriteHeader call from Go-todoapp/app/models/controllers.signup (route_auth.go:26)
+2024/04/28 19:11:35 server.go:3413: http: superfluous response.WriteHeader call from Go-todoapp/app/models/controllers.signup (route_auth.go:26)
