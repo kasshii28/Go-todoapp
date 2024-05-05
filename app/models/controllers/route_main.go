@@ -3,6 +3,7 @@ package controllers
 import (
 	"net/http"
 	"log"
+	"Go-todoapp/app/models"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
@@ -57,5 +58,64 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 		}
 
 		http.Redirect(w, r, "/login", http.StatusFound)
+	}
+}
+
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", http.StatusFound)
+	} else {
+		_, err:= sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
+	}
+}
+
+func todoUpdate(w http.ResponseWriter, r *http.Request, id int){
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", http.StatusFound)
+	} else {
+		err := r.ParseForm()
+		if err != nil {
+			log.Println(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		content := r.PostFormValue("content")
+		t := &models.Todo{ID: int64(id), Content: content, UserID: int64(user.ID)}
+		if err := t.UpdateTodo(); err != nil {
+			log.Println(err)
+		}
+		http.Redirect(w, r, "/todos", http.StatusFound)
+	}
+}
+
+func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w,r)
+	if err != nil {
+		http.Redirect(w, r, "/login", http.StatusFound)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		if err := t.DeleteTodo(); err != nil{
+			log.Println(err)
+		}
+		http.Redirect(w, r, "/todos", http.StatusFound)
 	}
 }
